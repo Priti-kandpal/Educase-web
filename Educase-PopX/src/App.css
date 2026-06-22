@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f8fa;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.phone {
+  width: 390px;
+  min-height: 700px;
+  background: #f0f1f5;
+  padding: 30px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 640px;
+}
+
+.welcome {
+  justify-content: flex-end;
+}
+
+h1,
+h2 {
+  color: #222;
+}
+
+.subtitle {
+  color: gray;
+  line-height: 1.6;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.primary {
+  background: #6c2fff;
+  color: white;
+}
+
+.secondary {
+  background: #d8c9ff;
+}
+
+.gray {
+  background: gray;
+  color: white;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.bio {
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 500px) {
+  .app {
+    align-items: flex-start;
+  }
+
+  .phone {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+}
